@@ -6,15 +6,12 @@
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
-<<<<<<< HEAD
+
   ##Creates the set function 
-=======
->>>>>>> d3af1cbdfe308750ae133d255cff3fa220d50166
   set <- function(y) {
     x <<- y
     m <<- NULL
   }
-<<<<<<< HEAD
   ##Creates the get function
   get <- function() x
   ##Creates the setsolve function
@@ -22,11 +19,6 @@ makeCacheMatrix <- function(x = matrix()) {
   ##Creates the getsolve function
   getsolve <- function() m
   ##assign parameters to functions
-=======
-  get <- function() x
-  setsolve <- function(solve) m <<- solve
-  getsolve <- function() m
->>>>>>> d3af1cbdfe308750ae133d255cff3fa220d50166
   list(set = set, get = get,
        setsolve = setsolve,
        getsolve = getsolve)
