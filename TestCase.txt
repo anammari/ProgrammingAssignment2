@@ -1,0 +1,8 @@
+n=10
+mnxn <- matrix(runif(n*n), nrow=n, ncol=n)  #or any other square matrix
+x <- makeCacheMatrix()
+x$set(mnxn)
+x$get()
+cacheSolve(x)  #calcuates the value and caches it
+imnxn <- cacheSolve(x)  #returns the cached value
+round( mnxn %*% imnxn)  # shold be an identity matrix
